@@ -1,0 +1,1 @@
+{"MAIL_MAILER":"smtp","MAIL_HOST":"smtp.gmail.com","MAIL_PORT":"587","MAIL_USERNAME":"admin@mnr.ae","MAIL_PASSWORD":"wgljyahjxqsmoyvl","MAIL_ENCRYPTION":"tls","MAIL_FROM_ADDRESS":"admin@mnr.ae","MAIL_FROM_NAME":"Laravel application"}
