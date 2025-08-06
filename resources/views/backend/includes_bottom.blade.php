@@ -1,30 +1,59 @@
-<!-- Bootstrap bundle with popper -->
-<script src="https://mnr.ae/public/assets/backend/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+<!--Bootstrap bundle with popper-->
 
-<script src="https://mnr.ae/public/assets/backend/js/swiper-bundle.min.js"></script>
+<script src="{{ asset('assets/backend/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js') }}"></script>
+
+<script src="{{ asset('assets/backend/js/swiper-bundle.min.js') }}"></script>
 
 <!-- Datepicker js -->
-<script src="https://mnr.ae/public/assets/backend/js/moment.min.js"></script>
-<script src="https://mnr.ae/public/assets/backend/js/daterangepicker.min.js"></script>
+
+<script src="{{ asset('assets/backend/js/moment.min.js') }}"></script>
+
+<script src="{{ asset('assets/backend/js/daterangepicker.min.js') }}"></script>
 
 <!-- Select2 js -->
-<script src="https://mnr.ae/public/assets/backend/js/select2.min.js"></script>
-<script src="https://mnr.ae/public/assets/backend/js/jquery.nice-select.min.js"></script>
 
-<script src="https://mnr.ae/public/assets/backend/font-awesome-icon-picker/fontawesome-iconpicker.min.js"></script>
+<script src="{{ asset('assets/backend/js/select2.min.js') }}"></script>
 
-<!-- Custom Script -->
-<script src="https://mnr.ae/public/assets/backend/js/script.js"></script>
-<script src="https://mnr.ae/public/assets/backend/js/custom.js"></script>
+<script src="{{ asset('assets/backend/js/jquery.nice-select.min.js') }}"></script>
 
-<!-- Summernote Script -->
-<script src="https://mnr.ae/public/assets/backend/vendors/summernote-0.8.18-dist/summernote-lite.min.js"></script>
 
-<!-- pdf Script -->
-<script src="https://mnr.ae/public/assets/backend/js/pdfmake.min.js"></script>
 
-<!-- Toaster Script -->
-<script src="https://mnr.ae/public/assets/backend/js/toastr.min.js"></script>
+<script src="{{ asset('assets/backend/font-awesome-icon-picker/fontawesome-iconpicker.min.js') }}"></script>
+
+
+
+<!--Custom Script-->
+
+<script src="{{ asset('assets/backend/js/script.js') }}"></script>
+
+<script src="{{ asset('assets/backend/js/custom.js') }}"></script>
+
+
+
+<!--Summernone Script-->
+
+<script src="{{ asset('assets/backend/vendors/summernote-0.8.18-dist/summernote-lite.min.js') }}"></script>
+
+
+
+
+
+
+
+
+
+<!--pdf Script-->
+
+<script src="{{ asset('assets/backend/js/pdfmake.min.js') }}"></script>
+
+
+
+
+
+<!--Toaster Script-->
+
+<script src="{{ asset('assets/backend/js/toastr.min.js') }}"></script>
+
 
 
 
