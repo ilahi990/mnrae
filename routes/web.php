@@ -63,7 +63,7 @@ Route::get('/clear-cache', function () {
 
 
 
-Route::any('/contact-email', 'EmailController@sendEmail')->name('contact_email');
+Route::any('/contact-email', [EmailController::class, 'sendEmail'])->name('contact_email');
 
 Route::get('/send-email', [EmailController::class, 'index']);
 

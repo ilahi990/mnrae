@@ -6497,7 +6497,7 @@ img {
 
 .nice-select.open .list {
 
-    width: 100%;
+     width: 100%;
 
 }
 
@@ -11157,19 +11157,19 @@ model-viewer {
 .bannar-area .nice-select .list,
 .bannar-area .nice-select.open .list {
     max-height: 200px;
-    margin-top:-90px;
     overflow-y: auto;
-    width: 100%;
-    max-width: 237px;
+    margin-top: -90px;
+    width: 100%; /* Match the width of the parent select */
+    min-width: 200px; /* Minimum width to ensure consistency */
     padding: 10px 0;
     margin-left: 0;
-    /* Removed negative margin-top to keep dropdowns visible */
     position: absolute;
-    /* Ensures dropdown stays within parent */
-    top: 100%;
-    /* Positions dropdown below the select */
+    top: 100%; /* Positions dropdown below the select */
     left: 0;
     box-sizing: border-box;
+    /* Ensure the width matches the select element */
+    background-color: #fff; /* Optional: Ensure visibility */
+    border: 1px solid #ccc; /* Optional: Add border for clarity */
 }
 
 /* Scrollbar styling for better appearance (optional) */
@@ -11192,10 +11192,11 @@ model-viewer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .container {
+    .newClass {
         margin-top: -31px;
         /* Adjust for tablets */
     }
+
     .inner-col {
 
 
@@ -11206,7 +11207,7 @@ model-viewer {
     .bannar-area .nice-select .list,
     .bannar-area .nice-select.open .list {
         max-height: 150px;
-        max-width: 100%;
+        max-width: 100px;
         top: 100%;
     }
 
@@ -11220,14 +11221,16 @@ model-viewer {
 
     .bannar-content p {
         font-size: 0.9rem;
+        margin-top: -10px;
     }
 }
 
 @media (max-width: 576px) {
-    .container {
+    .newClass {
         margin-top: -31px;
         /* Adjust for mobile */
     }
+
     .inner-col {
 
 
@@ -11237,14 +11240,14 @@ model-viewer {
 
     .bannar-area .nice-select .list,
     .bannar-area .nice-select.open .list {
-        max-height: 120px;
-        max-width: 100%;
+        max-height: 150px;
+        max-width: 100px;
         top: 100%;
     }
 
     .bannar_drop {
         padding: 10px;
-        margin-top: 20px;
+        margin-top: -12px;
     }
 
     .bannar-content h2 {
@@ -11253,6 +11256,7 @@ model-viewer {
 
     .bannar-content p {
         font-size: 0.8rem;
+        margin-top: -10px;
     }
 
     .bannar-search .single-search p {
@@ -11270,17 +11274,17 @@ model-viewer {
 }
 
 .bannar_drop {
-    margin-top: 36px;
-    background-color: #FFFFFF21;
+    margin-top: -12px;
+    /* background-color: #FFFFFF21; */
     padding: 20px;
     border-radius: 10px;
     width: 100%;
     /* Ensures full width */
 }
 
-.location_h {
-    background-position: 79px 13px !important;
-}
+/* .location_h {
+    /* background-position: 79px 13px !important;
+} */
 
 .bannar-area .bannar-search {
     margin: auto;

@@ -138,7 +138,7 @@
 
                <!-- Header Button Start -->
 
-               <div class="header-btn">
+               {{-- <div class="header-btn">
 
                   @if(Auth::check())
 
@@ -214,7 +214,7 @@
 
                   <span class="crose-icon"><i class="fa-solid fa-xmark"></i></span>
 
-               </div>
+               </div> --}}
 
                <!-- Header Button End -->
 
