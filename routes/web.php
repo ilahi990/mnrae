@@ -4,6 +4,7 @@
 
 use App\Http\Controllers\InstallController;
 
+use App\Http\Controllers\WebhookController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AdminController;
@@ -642,37 +643,12 @@ Route::controller(HomeController::class)->group(function () {
 
 
     Route::controller(CustomerController::class)->middleware(['auth', 'verified'])->group(function () {
-
-
-
         Route::get('customer/account', 'customerAccount')->name('customerAccount');
-
         Route::post('customer/account/update', 'customerAccountUpdate')->name('customerAccountUpdate');
-
-
-
-
-
-
-
         Route::get('customer/select/listings', 'select_listings')->name('select_listings');
-
-
-
         Route::get('country/wise/state/{id}', 'countryWiseState')->name('countryWiseState');
-
         Route::get('state/wise/city/{id}', 'stateWiseCity')->name('stateWiseCity');
-
-
-
-
-
-
-
-
-
         Route::get('agent/mylistings/select/listings', 'selectListigForMyListings')->name('selectListigForMyListings');
-
         Route::get('agent/mylistings/{type}', 'showMyListings')->name('showMyListings');
 
 
@@ -693,7 +669,7 @@ Route::controller(HomeController::class)->group(function () {
 
 
 
-        Route::post('customer/book/appointment', 'customerBookAppointment')->name('customerBookAppointment');
+
 
 
 
@@ -925,10 +901,8 @@ Route::controller(HomeController::class)->group(function () {
 
     });
 
-
-
-
-
+    // appointment route out of the middleware by fahad
+    Route::post('customer/book/appointment', [WebhookController::class,'customerBookAppointment'])->name('customerBookAppointment');
         // Online Payment Gateways
 
 Route::controller(PaymentController::class)->group(function () {
